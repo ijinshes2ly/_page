@@ -1,5 +1,12 @@
 ---
 title: "Categories"
-layout: categories
+layout: page
 permalink: /categories/
 ---
+
+<h1>📂 Categories</h1>
+<ul>
+  {% for category in site.categories %}
+    <li><a href="/categories/{{ category[0] }}/">{{ category[0] }}</a></li>
+  {% endfor %}
+</ul>
